@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { ChevronLeft, Share2, AlertCircle } from 'lucide-react';
 import { Button } from '../../components/Button';
 
 const RequestDetailsPage: React.FC = () => {
   const navigate = useNavigate();
-  const { id } = useParams();
   const [showGuidelines, setShowGuidelines] = useState(false);
   const [donationConfirmed, setDonationConfirmed] = useState(false);
 

@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { ChevronLeft, MoreVertical, Send, MapPin } from 'lucide-react';
 import { Button } from '../../components/Button';
 
 const ChatRoomPage: React.FC = () => {
   const navigate = useNavigate();
-  const { id } = useParams();
   const [message, setMessage] = useState('');
   const [messages, setMessages] = useState([
     { id: 1, text: 'Hello, I need O+ blood.', sender: 'them', time: '10:30 AM' },

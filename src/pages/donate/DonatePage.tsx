@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Search, MapPin, Droplet, ChevronLeft } from 'lucide-react';
-import { Input } from '../../components/Input';
+import { ChevronLeft } from 'lucide-react';
 import { Button } from '../../components/Button';
 
 const mockRequests = [
